@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Makyneta Unipessoal, Lda."/>
+    <meta name="description" content="Mr DeviX — Content Creator & Influencer"/>
+    <meta name="keywords" content="Mr DeviX, Content Creator, Influencer"/>
+    <meta name="robots" content="index, follow"/>
+    <meta property="og:title" content="Mr DeviX"/>
+    <meta property="og:description" content="Mr DeviX — Content Creator & Influencer"/>
+    <meta property="og:image" content="assets/images/davyd.jpg"/>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/home.css"/>
+    <!-- Title & Favicon -->
+    <title>Mr DeviX</title>
+    <link rel="icon" type="image/jpg" href="assets/images/davyd.jpg"/>
+</head>
+<body>
+
+    <!-- Canvas para partículas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Gradientes de fundo -->
+    <div class="bg-mesh"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <!-- Linha de scan cinematográfica -->
+    <div class="scan-line"></div>
+
+    <!-- Conteúdo principal -->
+    <main class="page">
+
+        <!-- Secção do perfil -->
+        <section class="profile" aria-label="Perfil de Mr DeviX">
+
+            <!-- Avatar com anel animado -->
+            <div class="avatar-container">
+                <div class="avatar-glow"></div>
+                <div class="avatar-ring">
+                    <svg class="ring-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="56" stroke="url(#ringGrad)" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="ringGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#a78bfa"/>
+                                <stop offset="50%" stop-color="#f472b6"/>
+                                <stop offset="100%" stop-color="#fbbf24"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <img class="avatar-img" src="assets/images/davyd.jpg" alt="Mr DeviX"/>
+                </div>
+                <!-- Badge de status online -->
+                <div class="status-dot" title="Online">
+                    <span class="status-pulse"></span>
+                </div>
+            </div>
+
+            <!-- Nome e info -->
+            <div class="profile-info">
+                <h1 class="name">
+                    <span class="name-prefix">Mr</span>
+                    <span class="name-main">DeviX</span>
+                </h1>
+                <!-- <p class="handle">@mr.devix</p> -->
+                <p class="bio">Criando conteúdo que inspira.<br/>Bem-vindo ao meu universo.</p>
+
+                <!-- Stats -->
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="stat-num">1.30K</span>
+                        <span class="stat-lbl">Seguidores</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat">
+                        <span class="stat-num">40+</span>
+                        <span class="stat-lbl">Vídeos</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat">
+                        <span class="stat-num">120K+</span>
+                        <span class="stat-lbl">Visualizações</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divisor decorativo -->
+        <div class="section-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- Links -->
+        <nav class="links-nav" aria-label="Links de Mr DeviX">
+
+            <!-- Instagram -->
+            <a class="link-card" href="https://instagram.com/mr.devix" target="_blank" rel="noopener noreferrer" data-delay="1">
+                <div class="card-bg"></div>
+                <div class="card-shimmer"></div>
+                <div class="card-inner">
+                    <div class="card-icon ig-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="card-text">
+                        <span class="card-platform">Instagram</span>
+                        <span class="card-handle">@mr.devix</span>
+                    </div>
+                    <div class="card-action">
+                        <div class="action-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-border-glow ig-glow"></div>
+            </a>
+
+            <!-- YouTube -->
+            <a class="link-card" href="https://youtube.com/@mrdewix" target="_blank" rel="noopener noreferrer" data-delay="2">
+                <div class="card-bg"></div>
+                <div class="card-shimmer"></div>
+                <div class="card-inner">
+                    <div class="card-icon yt-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" stroke="currentColor" stroke-width="1.8"/>
+                            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <div class="card-text">
+                        <span class="card-platform">YouTube</span>
+                        <span class="card-handle">@mrdewix</span>
+                    </div>
+                    <div class="card-action">
+                        <div class="action-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-border-glow yt-glow"></div>
+            </a>
+
+        </nav>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-copy">© 2026 Mr.DeviX</p>
+            <span class="footer-dot">·</span>
+            <p class="footer-made">Made by <a href="#" class="footer-link">Makyneta Unipessoal, Lda.</a></p>
+        </footer>
+
+    </main>
+
+    <script src="assets/scripts/particles.js"></script>
+</body>
+</html>
