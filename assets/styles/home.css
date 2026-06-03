@@ -503,6 +503,17 @@ body {
     color: #fca5a5;
 }
 
+/* Ícone TikTok */
+.tt-icon {
+    background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(30,30,30,0.6));
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #f0f0f0;
+}
+
+.tt-glow {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+}
+
 /* Texto do card */
 .card-text {
     flex: 1;
